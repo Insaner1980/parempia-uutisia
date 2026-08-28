@@ -1,0 +1,1 @@
+export const THEME_BOOTSTRAP = `(function(){var t;try{t=localStorage.getItem('pu-theme')}catch(e){}document.documentElement.dataset.theme=t==='light'||t==='dark'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'})()`;

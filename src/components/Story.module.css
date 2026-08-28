@@ -1,0 +1,28 @@
+.story { min-width: 0; }
+.kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 17px; margin: 0 0 6px; font-size: .875rem; font-weight: 700; letter-spacing: .035em; text-transform: uppercase; }
+.kicker a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; text-decoration: none; }
+.kicker a:hover { text-decoration: underline; }
+.kicker > span { color: var(--muted-text); }
+.headline { font-family: var(--font-serif); font-weight: 550; font-size: clamp(1.45rem, 2.1vw, 1.95rem); letter-spacing: -.026em; line-height: 1.12; margin: 0 0 13px; overflow-wrap: break-word; }
+.headline a { display: block; min-height: 44px; text-decoration: none; }
+.headline a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.summary { font-family: var(--font-sans); font-size: 1.125rem; line-height: 1.55; margin-bottom: 15px; font-weight: 400; }
+.meta { display: flex; flex-wrap: wrap; gap: 0 14px; color: var(--muted-text); font-size: .875rem; line-height: 1.5; }
+.sourceLink { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; font-size: .875rem; text-decoration-thickness: 1px; }
+.sourceLink span { text-decoration: none; font-size: .95rem; }
+.lead .headline { font-size: clamp(2.2rem, 3.65vw, 3.4rem); font-weight: 600; line-height: 1.04; letter-spacing: -.037em; margin-bottom: 20px; }
+.lead .summary { font-size: 1.25rem; line-height: 1.5; }
+.lead .kicker { margin-bottom: 10px; }
+.compact { padding-bottom: 23px; }
+:where(.compact) + .compact { padding-top: 22px; border-top: 1px solid var(--rule); }
+.compact .headline { font-size: clamp(1.3rem, 1.65vw, 1.52rem); line-height: 1.14; margin-bottom: 10px; }
+.compact .kicker { margin-bottom: 4px; gap: 12px; }
+.figure { margin: 0 0 18px; }
+.image { width: 100%; height: auto; background: transparent; }
+.caption { font-family: var(--font-sans); font-size: .875rem; line-height: 1.5; color: var(--muted-text); margin-top: 8px; }
+.caption a { text-underline-offset: 2px; }
+@media (max-width: 700px) {
+  .lead .headline { font-size: clamp(2.18rem, 9vw, 3rem); }
+  .lead .summary { font-size: 1.1875rem; }
+  .headline { font-size: 1.72rem; }
+}

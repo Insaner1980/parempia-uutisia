@@ -1,0 +1,15 @@
+.content { max-width: 1020px; margin: 0 auto; }
+.intro { font-family: var(--font-sans); font-size: 1.25rem; line-height: 1.55; max-width: 780px; margin: 0 0 38px; }
+.prose { max-width: 700px; }
+.prose h2 { font-family: var(--font-serif); font-weight: 550; font-size: 1.9rem; letter-spacing: -.025em; line-height: 1.2; margin: 35px 0 15px; }
+.prose p { line-height: 1.7; margin-bottom: 20px; }
+.prose a { text-underline-offset: 4px; }
+.sources { margin-top: 28px; }
+.source { display: grid; grid-template-columns: 1fr 1.6fr; gap: 30px; padding: 28px 0; border-top: 1px solid var(--rule); }
+.source h2 { font-family: var(--font-sans); font-size: 1.5rem; font-weight: 700; margin: 0 0 7px; line-height: 1.2; }
+.source p { margin-bottom: 10px; }
+.sourceMeta { display: block; color: var(--muted-text); font-size: .875rem; }
+.sourceLinks { display: flex; gap: 24px; flex-wrap: wrap; font-size: .875rem; }
+.sourceLinks a { display: inline-flex; align-items: center; min-height: 44px; }
+.note { padding: 22px 0; margin-top: 32px; border-top: 1px solid var(--rule); font-size: .9rem; color: var(--muted-text); }
+@media (max-width: 700px) { .source { display: block; } .source > div + div { margin-top: 18px; } .intro { font-size: 1.1875rem; } }

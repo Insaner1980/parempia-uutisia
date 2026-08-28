@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+data/
+output/
+test-results/
+playwright-report/
+.env*
+!.env.example
+*.tsbuildinfo
+*.log
+.sonar/

@@ -1,0 +1,22 @@
+.article { max-width: 860px; margin: 10px auto 0; }
+.kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; font-size: .875rem; letter-spacing: .035em; text-transform: uppercase; margin-bottom: 18px; }
+.kicker a { display: inline-flex; min-width: 44px; min-height: 44px; align-items: center; font-weight: 700; text-decoration: none; }
+.kicker a:hover { text-decoration: underline; }
+.kicker span { color: var(--muted-text); }
+.article h1 { font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4.1rem); font-weight: 550; line-height: 1.03; letter-spacing: -.042em; margin: 0 0 24px; }
+.byline { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-top: 1px solid var(--rule); padding: 15px 0 26px; }
+.sourceType { font-size: .875rem; color: var(--muted-text); }
+.body { max-width: 700px; margin: 25px 0 0; }
+.summary { font-family: var(--font-sans); font-size: 1.25rem; line-height: 1.55; margin-bottom: 30px; }
+.transparency { font-size: .89rem; line-height: 1.65; color: var(--muted-text); max-width: 640px; }
+.body > a { margin-top: 8px; }
+.back { margin-top: 32px; border-top: 1px solid var(--rule); padding-top: 14px; font-size: .9rem; }
+@media (max-width: 700px) {
+  .article { margin-top: 0; }
+  .article h1 { font-size: clamp(2.3rem, 9.5vw, 3rem); }
+  .kicker { gap: 0 17px; margin-bottom: 13px; }
+  .byline { display: block; padding-bottom: 22px; }
+  .sourceType { display: block; margin-top: 7px; }
+  .body { margin-top: 21px; }
+  .summary { font-size: 1.1875rem; }
+}
